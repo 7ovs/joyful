@@ -1,0 +1,17 @@
+{
+  "name": "vesreb",
+  "description": "Veselie Rebiyata promo web page",
+  "main": "index.js",
+  "authors": [
+    "7ovs group"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

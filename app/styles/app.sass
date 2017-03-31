@@ -1,0 +1,105 @@
+$base-body-font-family:                          "Open Sans"
+$tab-border:                                     #aaa
+$tab-border-width:                               1px
+$tab-padding-horizontal:                         40px
+$tab-padding-vertical:                           16px
+
+@import "uikit-mixins"
+@import "uikit"
+@import "components/slideshow"
+
+
+
+.uk-overlay-background
+  background: rgba(0,0,0,.4)
+
+.main-block
+  opacity: 1
+  .main-block-title
+    position: absolute
+    top: 20px
+    left: 20px
+    h1
+      margin: 0
+      padding: 0
+      font: bold 52px/52px "Open Sans Condensed"
+      color: white
+    h5
+      margin: 0
+      padding: 0
+      color: #ccc
+      font: 16px "Open Sans"
+      text-transform: uppercase
+
+  .learn-more-text
+    position: absolute
+    width: 30%
+    bottom: 10px
+    left: 20px
+    font: 18px "Open Sans"
+    line-height: 24px
+    font-weight: lighter
+    font-style: italic
+    opacity: .85
+
+  .learn-more-link
+    text-align: right
+
+  .unique-chance
+    position: absolute
+    right: 20px
+    top: 20px
+    width: 33%
+    font: 18px "Open Sans"
+    line-height: 24px
+    font-weight: lighter
+    font-style: italic
+    text-align: right
+    opacity: .85
+
+  .lets-help
+    position: absolute
+    right: 20px
+    bottom: 160px
+    width: 25%
+    font: 23px "Open Sans" 
+    font-style: italic
+    text-align: right
+    opacity: .85
+
+  .help-button
+    position: absolute
+    right: 20px
+    bottom: 20px
+    padding: 30px 100px 
+    background: #D8B696
+    font: 24px "Open Sans" 
+    transition: background-color 0.5s ease;
+    opacity: .75
+    border: 1px solid rgba(white, .5)
+    border-radius: 2px
+    color: white
+    &:hover
+      background: #E58C43
+      color: white
+
+
+
+.uk-tab
+  font: bold 24px "Open Sans Condensed"
+  li > a
+    color: #E58C43
+    &:hover
+      color: darker(#E58C43, 30%)
+    &:active
+      color: #222
+
+
+.tab-content
+  list-style: none
+  margin: 0
+  padding: 0
+  width: 100%
+.concert-view
+  height: 480px
+

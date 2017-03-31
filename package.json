@@ -1,0 +1,32 @@
+{
+  "name": "vesreb",
+  "version": "0.0.1",
+  "description": "Veselie Rebiyata promo web page",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "coffee-script": "^1.12.2",
+    "color": "^1.0.3",
+    "ect": "^0.5.9",
+    "express": "^4.14.0",
+    "lodash": "^4.17.2",
+    "moment": "^2.17.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  },
+  "scripts": {
+    "start": "node web.js"
+  },
+  "author": "7ovs group",
+  "license": "MIT"
+}
