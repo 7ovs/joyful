@@ -1,0 +1,45 @@
+<div class="uk-grid ul-relative">
+
+  <div class="uk-width-1-3">
+    <ul id="poland-nav" class="uk-nav" data-target="poland-switcher" data-uk-switcher="{connect:'#poland', active:0}">
+      <li data-target="warsav-tab"><a href="#">Варшава</a></li>
+      <li data-target="belostok-tab"><a href="#">Белосток</a></li>
+    </ul>  
+  </div>
+
+  <div class="uk-width-2-3">
+    <ul id="poland-switcher" class="uk-switcher">
+      <li id="warsav-tab">
+        <div class="concert-date">Варшава</div>
+        <p class="time-remaning-label">До концерта осталось</p>
+        <div class="countdown-view" data-date="2017-05-15 15:00"></div>
+        <button class="uk-button uk-button-primary uk-button-large" data-uk-modal="{target:'#warsav-modal'}">Присоединиться</button>
+        <div id="warsav-modal" class="uk-modal">
+          <div class="uk-modal-dialog">
+            <a class="uk-modal-close uk-close"></a>
+            <h1>LEARN MORE</h1>
+            <p>
+              kotbus
+            </p>
+          </div>
+        </div>
+      </li>
+      <li id="belostok-tab">
+        <div class="concert-date">Белосток</div>
+        <p class="time-remaning-label">До концерта осталось</p>
+        <div class="countdown-view" data-date="2017-05-16 15:00"></div>
+        <button class="uk-button uk-button-primary uk-button-large" data-uk-modal="{target:'#belostok-modal'}">Присоединиться</button>
+        <div id="belostok-modal" class="uk-modal">
+          <div class="uk-modal-dialog">
+            <a class="uk-modal-close uk-close"></a>
+            <h1>LEARN MORE</h1>
+            <p>
+              kotbus
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    
+  </div>
+</div>

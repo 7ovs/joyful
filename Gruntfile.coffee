@@ -22,7 +22,7 @@ module.exports = (grunt) ->
     coffee:
       client:
         files:
-          "#{TMP_DIR}/js/app.js": "#{APP_DIR}/scripts/app.coffee"
+          "#{DEV_DIR}/pub/app.js": "#{APP_DIR}/scripts/app.coffee"
 
       server:
         options:
@@ -62,6 +62,7 @@ module.exports = (grunt) ->
           "#{BOWER}/jquery/dist/jquery.js"
           "#{BOWER}/lodash/dist/lodash.js"
           "#{BOWER}/moment/min/moment-with-locales.min.js"
+          "#{BOWER}/countdownjs/countdown.min.js"
           "#{BOWER}/uikit/js/uikit.min.js"
           "#{BOWER}/uikit/js/components/slideshow.min.js"
           "#{BOWER}/uikit/js/components/slideshow-fx.min.js"
@@ -70,11 +71,11 @@ module.exports = (grunt) ->
         dest: "#{DEV_DIR}/pub/core.js"
 
 
-      app:
-        src: [
-          "#{TMP_DIR}/js/app.js"
-        ]
-        dest: "#{DEV_DIR}/pub/app.js"
+      #app:
+      #  src: [
+      #    "#{TMP_DIR}/js/app.js"
+      #  ]
+      #  dest: "#{DEV_DIR}/pub/app.js"
 
 
     copy:
