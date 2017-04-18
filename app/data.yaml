@@ -1,0 +1,274 @@
+---
+ru:
+  lang: ru
+  title: Веселые ребята
+
+  phone: +375 44 788-12-64 сестра Анастасия
+  footer: В рамках фестиваля "От сердца к сердцу"
+  email: stelisabethprojects@gmail.com
+  text: [ "ПОПАСТЬ НА КОНЦЕРТ" ]
+  active_tab: 0
+  date_format: "DD MMMM, dddd, в HH:mm"
+
+  h2h_link: https://www.facebook.com/H2Hfestivalpage
+
+  main_panel:
+    pre_title: ТВОРЧЕСКИЙ КОЛЛЕКТИВ
+    title: ВЕСЕЛЫЕ РЕБЯТА
+    text:
+      - "— Его участники живут в одном из психоневрологических интернатов для людей с
+        ограниченными возможностями, многие из которых, несмотря на физические и психические
+        недостатки наделены неограниченными талантами..."
+      - "Узнать больше ➛"
+      - "— Теперь у них появилась уникальная возможность выступить в различных странах Европы..."
+      - "— Поможем осуществить мечту этих ребят!"
+    button_title: ПОМОЧЬ!
+
+
+  trip_panel:
+    text:
+      - "Благодарим Вас за проявленный интерес к нашему проекту!"
+      - "Вход свободный."
+      - "Присоединиться"
+      - "До концерта осталось"
+      - "Дня|Часов|Минут|Секунд"
+      - "Приглашаем Всех!"
+    trip:
+      - id: poland
+        name: Польша
+        concerts:
+          - id: warsaw1
+            name: Варшава
+            subname: Духовно-просветительский центр
+            date: 2017-05-14 12:00
+            place: ul. Świętych Cyryla i Metodego 4, 03-403 Warszawa
+            large: true
+
+          - id: warsaw2
+            name: Варшава
+            subname: Костел Св. Яцека
+            date: 2017-05-14 16:00
+            place: ul. Freta 1000-227 Warszawa
+            large: true
+
+      - id: germany
+        name: Германия
+        concerts:
+          - id: berlin
+            name: Берлин
+            date: 2017-05-16 18:00
+            place: Russisches Haus der Wissenschaft und Kultur, Friedrichstraße, 176-179, 10117, Berlin
+            large: true
+
+      - id: france
+        name: Франция
+        concerts:
+
+          - id: troyes
+            name: Труа
+            date: 2017-05-18 19:30
+            place: Église Saint-Jean-au-Marché, 78 Rue Urbain IV, 10000 Troyes
+
+          - id: nancy
+            name: Нанси
+            date: 2017-05-19 20:30
+            place: Eglise Saint Pierre, Place Saint-Pierre, à 54110 Rosières-aux-Salines
+
+          - id: graye
+            name: Грей
+            date: 2017-05-20 20:00
+            place: Salle des Congrès, 1 B Rue Moïse Lévy, 70100 Gray
+
+          - id: paris
+            name: Париж
+            date: 2017-05-21 14:00
+            place: Амфитеатр Русского Духовно-культурного центра при Кафедральном соборе Святой
+              Троицы. 1, quau Branly - 75007 Paris
+            large: true
+
+  about_modal:
+    video: |
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/DniM7Po1Khc" frameborder="0" allowfullscreen></iframe>
+    header:   "Понимать сердцем, петь душой..."
+    article:
+      - 
+        - Много лет при монастыре действует творческий коллектив "Весёлые ребята", которым руководит монахиня София (Демьянова). Его участники живут в одном из интернатов для людей с ограниченными возможностями, многие из которых наделены неограниченными талантами. Несмотря на свои психические и физические недуги они не унывают, а ищут спасение в творчестве. 
+        - Их социум — это территория психоневрологического интерната № 3. Кто-то попал сюда волей судьбы, а кто-то провел здесь всю свою жизнь. Им недоступно большинство самых простых радостей жизни. То, что для нас обыденность, для них — неизвестность. Когда мы смотрим на них из «большого мира», нам кажется, что они лишены всего. Но это не так. Да, конечно, они не могут жить в обычном для нас ритме. Однако это не значит, что они бедны душой. Сестры и братья, которые посещают интернат, отмечают их искренность и чуткость. Эти люди никогда не предадут, не обманут — они просто не умеют этого.
+      -
+        - «Веселые ребята» выступают не только в родных стенах. В рамках благотворительных проектов они уже не раз выступали в России и Европе. В планах на ближайшее будущее — поездка во Францию. Все это возможно благодаря пожертвованиям тех, кто не равнодушен к их судьбам. И мы надеемся, что с Божией помощью творческая копилка артистов пополнится еще одним удачным выступлением.
+    quotes: 
+      - paragraphs: 
+          - "— Никто из них не имеет музыкального образования, но все умеют петь душой, — рассказывает матушка София."
+          - "— Они не только поют, но и играют на ложках, танцуют. А как красиво порой говорят!"
+        author: "Монахиня София (Демьянова)"
+      
+      - paragraphs: 
+          - |
+            — Я пробовала петь, когда была еще ребенком. А в хоре я уже больше года.  Мне нравится выступать — нас хорошо принимают, аплодируют.
+          - |
+            Очень хочется поехать во Францию! Увидеть Эйфелеву башню в Париже, подняться на нее, посмотреть на город с высоты! И очень интересно пообщаться с людьми, которые там живут. Каждая поездка — это память, новые знакомые, интересные моменты!
+        author: "Солистка ансамбля-Елена Захаревская" 
+
+  help_modal:
+    header:
+      - Дорогие наши друзья!<br>Благодарим вас за интерес к нашему проекту! 
+      -
+        - Искренне надеемся, что вместе мы сможем сделать невозможное — возможным, и разделить с «Веселыми ребятами» радость исполнения их мечты!
+        - Ваша поддержка, а также помощь в продвижении нашего сайта нам очень важны!
+    bank:
+      - "Вы можете помочь проекту:"
+      -
+        - "Оказав финансовую поддержку, пожертвовав какую-либо сумму."
+        - "Реквизиты для пожертвований:"
+      - |
+        Bank name: BRE Bank S.A.INTERNETBANKING
+        Bank address: al.Pilsudskiego 3, 90-368 Lodz
+        IBAN: PL27114020040000371201841659
+        Receiver: Magdalena Tichoniuk
+        Address: ul. Stefana Zeromskiego 11, 17-200
+        Hajnowka, Polska
+        BIC/SWIFT: BREXPLPWMBK
+        Purpose: for the trip «Joyful Hearts» to France
+    other: 
+      - "Поддержка бывает не только материальной..."
+      -
+        - |
+          Расскажите о нас друзьям в <a href="https://www.facebook.com/pg/monsteelisabeth/posts/" target="blank">Facebook</a>
+        - "Расскажите о нас своим друзьям, родственникам, коллегам, чтобы и они, так же как и Вы, могли прийти на наш концерт."
+        - |
+          <a href="https://www.dropbox.com/sh/8r4uw3vwz75yi4l/AADVNqip8TC-T9UamwsnVdV0a" target="blank">Здесь</a> Вы можете скачать нашу афишу и помочь в её распространении.
+fr:
+  lang: fr
+  title: Les Coeurs en Joie 
+
+  phone: +375 44 788-12-64 Soeur Anastasia
+  footer: dans le cadre du festival “De coeur à Coeur”
+  email: stelisabethprojects@gmail.com
+  text: 
+    - "VISITER NOTRE CONCERT"
+
+  active_tab: 2
+  date_format: "DD MMMM, dddd, HH:mm"
+
+  h2h_link: https://www.facebook.com/H2Hfestivalpage
+
+  main_panel:
+    pre_title: UN ENSEMBLE 
+    title: LES COEURS EN JOIE
+    text:
+      - "— Ce collectif d'artistes du Service de Neuropsychiatrie, ils peuvent nous épater de leurs talents malgré leurs infirmités."
+      - "En savoir plus ➛"
+      - "— Les «Coeurs en Joie» ont aujourd’hui la possibilité faire découvrir leur spectacle hors fontières, à la découverte des pays de l’Europe de l’Ouest!"
+      - "— Aidons-les à réaliser leur rêve!"
+      
+
+    button_title: FAIRE UN DON
+    
+
+  trip_panel:
+    text:
+      - "Nous vous remercions cordialement de votre intérêt pour notre projet!"
+      - "Entrée libre."
+      - "nos concerts auront lieu..."
+      - "Avant le concert il reste"
+      - "Jours|Heures|Minutes|Seconds"
+      - "Приглашаем Всех!"
+
+    trip:
+      - id: poland
+        name: Pologne
+        concerts: 
+         - id: warsaw-1
+           name: Varsovie
+           subname: Сentre spirituel et éducatif
+           date: 2017-05-14 12-00
+           place: ul. Świętych Cyryla i Metodego 4, 03-403 Warszawa (Le 14 mai à 12h00, 4, rue Saints Cyrille et Méthode, 03-403, Varsovie)   
+           large: true
+         - id: warsaw-2
+           name: Varsovie
+           subname: Église Saint Hyacinthe
+           date: 2017-05-14 16-00
+           place: ul. Freta 1000-227 Warszawa (le 14 mai à 16h00, rue Fret 1000-227, Varsovie)
+           large: true
+
+      - id: germany
+        name: Allemagne
+        concerts:
+          - id: berlin
+            name: Berlin 
+            date: 2017-05-16 18:00
+            place: Russisches Haus der Wissenschaft und Kultur, Friedrichstraße, 176-179, 10117, Berlin (Le 16 mai à 18h00, Maison russe de la science et la culture)
+            large: true
+
+      - id: france
+        name: France
+        concerts:
+
+          - id: troyes
+            name: Troyes
+            date: 2017-05-18 19:30
+            place: Église Saint-Jean-au-Marché, 78 Rue Urbain IV, 10000 Troyes
+
+          - id: nancy
+            name: Nancy
+            date: 2017-05-19 20:30
+            place: Eglise Saint Pierre, Place Saint-Pierre, à 54110 Rosières-aux-Salines
+
+          - id: graye
+            name: Gray
+            date: 2017-05-20 20:00
+            place: Salle des Congrès, 1 B Rue Moïse Lévy, 70100 Gray
+
+          - id: paris
+            name: Paris
+            date: 2017-05-21 14:00
+            place: Le 21 mai à 14h00, à l’amphithéâtre du Centre culturel et spirituel auprès de la cathédrale de la Sainte Trinité (1, quai Branly - 75007 Paris).
+            large: true
+
+  about_modal:
+    video: |
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/PFUBRZIhvdE" frameborder="0" allowfullscreen></iframe>
+    header:   "COMPRENDRE AVEC LE COEUR, CHANTER AVEC L’ÂME..."
+    article:
+      - 
+        - Au cours de plusieurs années, un ensemble de chant et de danse «Les coeurs en joie» fonctionne auprès du monastère. Les membres de l’ensemble sont les patients du service neuropsychiatrique à l’Hôpital psychiatrique public. Leur espace vital se limite à un territoire restreint. On pourrait penser que leur vie quotidienne n’est pas très colorée. Te n’en pas ainsi. Certes, ils ne peuvent pas vivre à notre rythme habituel, mais cela ne veut pas dire qu’ils sont de pauvres âmes. Ils se sont retrouvés ici par des voies différentes et à des moments différents de leur vie. Ce qui les réunit, c’est la volonté de ne pas perdre le courage et le désir de se trouver. Les frères et les soeurs qui se rendent dans ce service de neuropsychiatrie, remarquent leur sincérité et leur ouverture du coeur. Ces personnes ne trahissent jamais et elles ne trompent pas les autres, car elles ne savent pas le faire.
+      -
+        - L’ensemble «Les Coeurs en Joie» se produit sur scène non seulement dans nos murs. ils se sont présentés plus d’une fois en Russie dans le cadre de projets de bienfaisance. Aujourd’hui notre futur projet pour cette année ce serait de programmer une tournée en France.. Ce reve peut se réaliser mais pour cela nous avons besoin de votre soutien. 
+    quotes: 
+      - paragraphs: 
+          - "— Aucun d’entre eux n’a une éducation musicale, et pourtant ils savent tous chanter avec leur âme, nous a dit Soeur Sophie." 
+          - "— Ils chantent, mais sont aussi capables pour certains de rythmer avec des cuillères en bois et ils dansent. Et que c’est joli ce qu’ils disent parfois!"
+        author: "Moniale Sophie"
+      
+      - paragraphs: 
+          - |
+            J’ai essayé de chanter quand j’étais encore enfant. Ça fait plus d’une année que je suis dans la choeur. J’aime apparaître sur la scène, on nous accueille bien, on nous applaudit. On voudrait aimerait beaucoup venir en France ! Voir la Tour Eiffel à Paris, y monter et observer la ville d’en haut! Il serait si intéressant de parler un peu avec les habitants.Tout voyage nous apporte des souvenirs, l’occasion de faire de nouvelles connaissances, et découvrir des curiosités! Hélène Zakharevskaya,
+        author: "Hélène Zakharevskaya, soliste" 
+
+  help_modal:
+    header:
+      - Chers amis, nous vous remercions cordialement de votre intérêt pour notre projet! 
+      -
+        - Chacun de nous a rêvu un jour de pouvoir réaliser une rêve impossible... Aujourd’hui vous pouvez, par votre soutient, rendre leur «rêve impossible» réalisable!
+        - Par avance, nous vous remercions sincèrement pour l’intérêt que vous portez à notre projet et votre soutient financier, mais aussi pour votre aide dans la promotion et la diffusion des informations disponibles sur notre website.
+    bank:
+      - "Vous pouvez aider à notre projet:"
+      -
+        - "En effectuant un don par versement, dont vous trouvez les références ci-dessous ."
+      - |
+        Bank name: BRE Bank S.A.INTERNETBANKING
+        Bank address: al.Pilsudskiego 3, 90-368 Lodz
+        IBAN: PL27114020040000371201841659
+        Receiver: Magdalena Tichoniuk
+        Address: ul. Stefana Zeromskiego 11, 17-200
+        Hajnowka, Polska
+        BIC/SWIFT: BREXPLPWMBK
+        Purpose: for the trip «Joyful Hearts» to France
+    other: 
+      - "Votre soutien peut être non seulement materiel, mais aussi:"
+      -
+        - | 
+          En partageant à vos amis sur <a href="https://www.facebook.com/pg/monsteelisabeth/posts/" target="blank">Facebook</a>
+        - "En diffusant ces informations parmi vos amis, vos proches et vos collègues pour qu’ils viennent à ces concerts."
+        - |
+          En téléchargeant <a href="https://www.dropbox.com/sh/8r4uw3vwz75yi4l/AADVNqip8TC-T9UamwsnVdV0a" target="blank">ici</a> notre affiche pour nous aider à la diffuser.

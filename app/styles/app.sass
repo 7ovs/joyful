@@ -5,10 +5,40 @@ $tab-border-width:                               1px
 $tab-padding-horizontal:                         40px
 $tab-padding-vertical:                           16px
 
+$modal-dialog-large-width-large: 930px
+
 @import "uikit-mixins"
 @import "uikit"
 @import "components/slideshow"
 
+html
+  margin: 0
+  padding: 0
+  background: #f2f2f2
+
+
+// body
+//   margin: 0
+//   padding: 0
+
+  
+
+.root-container
+  min-width: 1130px
+  position: relative
+  .phone
+    position absolute
+    top: -40px
+    right: 0
+    height: 40px
+    width: auto
+    background: #50555C
+    color: #ddd
+    font: bold 24px/40px "Open Sans Condensed"
+    text-align: right
+    padding: 0 10px
+    //border-top: 1px solid white
+    //box-shadow: 0 1px 3px rgba(black, .4)
 
 
 .uk-overlay-background
@@ -45,6 +75,15 @@ $tab-padding-vertical:                           16px
 
   .learn-more-link
     text-align: right
+    background: rgba(#E7A74A, .8)
+    transition: background-color 0.5s ease;
+    padding: 3px 20px
+    border-radius: 20px
+    color: white
+    &:hover
+      text-decoration: none
+      color: white
+      background: rgba(#3796CF, .7)
 
   .unique-chance
     position: absolute
@@ -74,19 +113,18 @@ $tab-padding-vertical:                           16px
     right: 20px
     bottom: 20px
     padding: 30px 100px 
-    background: #CD6419
+    background: rgba(#E7A74A, .8)
     font: 24px "Open Sans" 
     transition: background-color 0.5s ease;
     opacity: .75
     border: 1px solid rgba(white, .5)
-    border-radius: 2px
     color: white
     &:hover
-      background: #FD5B0F
+      background: #4CBB43
       color: white
 
 .tab-wrap 
-  background: #31363B
+  background: #50555C
   overflow: hidden
 
 .uk-tab
@@ -99,9 +137,23 @@ $tab-padding-vertical:                           16px
       color: #222
 
 .get-to-concert
-  background: #31363B
+  background: #50555C
   padding: 20px
   text-align: center
+  position: relative
+  &:after
+    z-index: 1
+    content: ""
+    position: absolute
+    top: -4px
+    right: -3px
+    width: 100px 
+    height: 100px
+    position: 
+    background: url("/img/h2h-logo.png")
+    background-position: 50% 50%
+    background-size: cover 
+    opacity: .5
   h2
     display: block
     color: #ddd
@@ -113,26 +165,279 @@ $tab-padding-vertical:                           16px
     margin: 0
     line-height: 0
 
+$tab-content-height: 540px
 
 .tab-content
   list-style: none
   margin: 0
   padding: 0
   width: 100%
-  height: 480px
-  background: #ddd
+  height: $tab-content-height
+  background: rgba(black, .05)
+  position: relative
+  #poland-tab:after
+    content : ""
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    background: url("/img/poland.png")
+    background-position: 60% 50%
+    background-size: cover 
+    width: 100%
+    height: 100%
+    opacity : 0.4
+    z-index: -1
+  #germany-tab:after
+    content : ""
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    background: url("/img/germany.png")
+    background-position: 50% 50%
+    background-size: cover 
+    width: 100%
+    height: 100%
+    opacity : 0.4
+    z-index: -1
+  #france-tab:after
+    content : ""
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    background: url("/img/france.png")
+    background-position: 50% 50%
+    background-size: cover 
+    width: 100%
+    height: 100%
+    opacity : 0.4
+    z-index: -1
+
+
+
+@mixin counter-labels($text)
+  position: relative
+  &:after
+    content: $text
+    text-transform: uppercase
+    position: absolute
+    width: 100%
+    bottom: -10px
+    left: 0
+    text-align: center
+    font: 22px "Open Sans"
 
 .countdown-view
-  font: 100 64px "Open Sans Condensed"
+  margin: 50px 0 70px
+  font: 100 98px "Open Sans Condensed"
+  line-height: 108px
   color: rgba(black, 0.7)
+  position relative
+  text-shadow: 0 1px 0 rgba(white, .5)
+  overflow: hidden
+  white-space: nowrap
+
+  .days
+    @include counter-labels("дня")
+  .hours
+    @include counter-labels("часов")
+  .minutes
+    @include counter-labels("минут")
+  .seconds
+    @include counter-labels("секунд")
+
+  .bracket
+    color: rgba(black, 0.4)
+    font: 100 115px "Open Sans Condensed"
+  .bracket-1
+    position: relative
+    &:after
+      content: "До концерта осталось:"
+      text-align: left
+      position: absolute
+      top: 8px
+      left: 12px
+      color: rgba(#261D11, .7)
+      font: 20px "Open Sans"
+      text-transform: uppercase
+      white-space: nowrap
+
+.countdown-view.fr
+  .days:after
+    content: "jours"
+  .hours:after
+    content: "heures"
+  .minutes:after
+    content: "minutes"
+  .seconds:after
+    content: "seconds"
+  .bracket-1:after
+    content: "Avant le concert il reste"
 
 
-.concert-view
-  background: rega(black, .4)
-  height: 480px
-
+.concert-date
+  background: rgba(#E7A74A, .8)
+  margin: 20px 20px 30px 0
+  padding: 30px 10px 10px
+  font: bold 24px "Open Sans Condensed"
+  text-align: left
+  color: white
 
 .city-nav
-  background: rega(black, .4)
-  background: rgba
+  background: rgba(black, .2)
+  height: $tab-content-height
+  li 
+    padding: 20px 0
+    text-align: center
+    
+    &.uk-active
+      background: rgba(white, 0.4)
+    a
+      color: #555
+      font: 200 42px "Open Sans"
+      line-height: 42px
+      &:hover
+        color: #111
+      &:active
+        color: #000
+    .subname 
+      display: block
+      font: bold 18px "Open Sans Condensed"
+      color: #444444
 
+  li.large
+    a
+      font: 200 64px "Open Sans" !important
+      line-height: 64px
+
+
+
+.city-view
+  text-align: center
+
+.help-modal
+  h2
+    text-align: center
+    font: bold 24px "Open Sans Condensed"
+    color: #444
+  h3
+    text-align: center
+    font: 21px "Open Sans"
+  p, li
+    font: 100 18px "Open Sans"
+  pre
+    font-size: 16px
+    line-height: 21px
+.attend-button
+  font: 100 32px "Open Sans"
+  text-transform: uppercase
+  padding: 20px 30px
+  background: rgba(#E7A74A, .8)
+  color: white
+  border-radius: 2px
+  transition: all ease 0.5s
+
+.attend-modal
+  h4
+    font: bold 24px "Open Sans Condensed"
+  h5
+    font: bold 24px "Open Sans"
+    font-style: italic
+  h6
+    margin-top 10px
+    font: bold 18px "Open Sans"
+    &.green
+      color: #518305
+    &.welcome
+      text-transform: uppercase
+
+
+footer
+  background: #50555C
+  color: #ddd
+  padding: 10px 10px 1px
+  a
+    color: #eee
+    &:hover
+      color: #BCCADF 
+  .project
+    text-align: center
+    font: 18px 'Open Sans'
+    font-weight: lighter
+    font-style: italic
+  .email
+    text-align: center
+    font:  14px 'Open Sans'
+
+
+
+.learn-more
+  p
+    font: 16px "Open Sans"
+  .video
+    padding: 40px 0 
+
+.figure-monsofia
+  padding-top: 200px
+  overflow: visible
+  position: relative
+  figcaption
+    z-index: 1
+    position: absolute
+    background: rgba(#ccc, .9)
+    padding: 10px
+    top: 5px
+    left: 5px
+    width: 85%
+    height: 200px
+    box-shadow: 1px 1px 5px rgba(black, .3)
+    p
+      font: bold 18px "Open Sans Condensed"
+      text-align: right
+      &.author
+        font: bold 16px "Open Sans"
+        font-style: italic
+    &:after
+      content: ""
+      position: absolute
+      width: 0
+      height: 0
+      bottom: -20px
+      right: 80px 
+      border-left: 20px solid transparent
+      border-right: 20px solid transparent
+      border-top: 20px solid rgba(#ccc, .9)
+
+
+.figure-elena
+  padding-top: 20px
+  overflow: visible
+  position: relative
+  figcaption
+    z-index: 1
+    position: absolute
+    background: rgba(#ccc, .9)
+    padding: 10px
+    top: 150px
+    left: 280px
+    width: 70%
+    height: auto
+    box-shadow: 1px 1px 5px rgba(black, .3)
+    p
+      font: bold 18px "Open Sans Condensed"
+      text-align: right
+      &.author
+        font: bold 16px "Open Sans"
+        font-style: italic
+    &:after
+      content: ""
+      position: absolute
+      width: 0
+      height: 0
+      top: 20px
+      left: -20px 
+      border-top: 20px solid transparent
+      border-bottom: 20px solid transparent
+      border-right: 20px solid rgba(#ccc, .9)

@@ -1,5 +1,29 @@
 express = require "express"
 ect = require "ect"
+fs = require "fs"
+moment = require "moment"
+_ = require "lodash"
+
+data = JSON.parse(fs.readFileSync("data.json", 'utf-8'))
+moment.locale('ru')
+
+data.ru.trip_panel.trip = data.ru.trip_panel.trip.map (country) ->
+  country.concerts = country.concerts.map (conc) ->
+    conc.dateFormat1 = moment(conc.date).format(data.ru.date_format)
+    return conc
+  return country
+
+moment.locale('fr')
+
+data.fr = _.extend({}, data.ru, data.fr)
+
+data.fr.trip_panel.trip = data.fr.trip_panel.trip.map (country) ->
+  country.concerts = country.concerts.map (conc) ->
+    conc.dateFormat1 = moment(conc.date).format(data.fr.date_format)
+    return conc
+  return country
+
+# console.log JSON.stringify(data, null, "  ")
 
 app = express()
 
@@ -12,8 +36,12 @@ app
       cache: no
     ).render)
 
+
 app.get '/', (req, res) ->
-  res.render 'index'
+  res.render 'index', data.ru
+
+app.get '/fr', (req, res) ->
+  res.render 'index', data.fr
 
 app.use(express.static("pub"))
 

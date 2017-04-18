@@ -8,6 +8,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks("grunt-contrib-uglify")
   grunt.loadNpmTasks("grunt-contrib-clean")
   grunt.loadNpmTasks("grunt-contrib-watch")
+  grunt.loadNpmTasks("grunt-yaml")
 
 
   APP_DIR = 'app'
@@ -107,6 +108,12 @@ module.exports = (grunt) ->
             dest: "#{DEV_DIR}/views"
         ]
 
+    yaml: 
+      data: 
+        options: 
+          space: 2
+        files:
+          "#{DEV_DIR}/data.json": "#{APP_DIR}/data.yaml"
 
     clean:
       dev: [
@@ -119,6 +126,13 @@ module.exports = (grunt) ->
       sass:
         files: ["#{APP_DIR}/styles/*.sass"]
         tasks: ["sass"]
+        options:
+          spawn: no
+          livereload: yes
+
+      yaml:
+        files: ["#{APP_DIR}/*.yaml"]
+        tasks: ["yaml"]
         options:
           spawn: no
           livereload: yes
@@ -155,4 +169,4 @@ module.exports = (grunt) ->
           options:
             reload: yes
 
-    grunt.registerTask "default", ["clean:pub", "coffee", "sass", "concat", "copy", "clean:temp"]
+    grunt.registerTask "default", ["clean:pub", "yaml", "coffee", "sass", "concat", "copy", "clean:temp"]

@@ -1,0 +1,28 @@
+<div class="uk-grid ul-relative">
+
+  <div class="uk-width-2-5 uk-flex">
+    <ul id="<%- @country.id %>-nav" class="uk-nav uk-flex-item-1 uk-flex uk-flex-column uk-flex-center city-nav" data-target="<%- @country.id %>-switcher" data-uk-switcher="{connect:'#<%- @country.id %>-switcher', active:0}">
+
+      <% for conc in @country.concerts : %>
+        <li data-target="<%- conc.id %>-tab" <% if conc.large : %>class="large"<% end %>>
+          <a href="#"><%= conc.name %>
+            <% if conc.subname : %>
+              <span class="subname"><%= conc.subname %></span>
+            <% end %>
+          </a>
+        </li>
+      <% end %>
+
+    </ul>  
+  </div>
+
+  <div class="uk-width-3-5">
+    <ul id="<%- @country.id %>-switcher" class="uk-switcher">
+
+      <% for conc in @country.concerts : %>
+        <%- include '_partials/_city-view', {conc: conc, self: @self } %>
+      <% end %>
+
+    </ul>
+  </div>
+</div>

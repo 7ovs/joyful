@@ -1,0 +1,17 @@
+<li id="<%- @conc.id %>-tab" class="city-view">
+  <div class="concert-date"><%= @conc.dateFormat1 %></div>
+  <div class="countdown-wrap">
+    <div class="countdown-view <%- @self.lang %>" data-date="<%= @conc.date %>"></div>  
+  </div>
+  <button class="uk-button attend-button" data-uk-modal="{target:'#<%- @conc.id %>-modal', center:true}"><%= @self.trip_panel.text[2] %></button>
+  <div id="<%- @conc.id %>-modal" class="uk-modal">
+    <div class="uk-modal-dialog attend-modal">
+      <a class="uk-modal-close uk-close"></a>
+      <h3></h3>
+      <h4><%= @conc.dateFormat1 %></h4>
+      <h5><%= @conc.place %></h5>
+      <h6 class="green"><%= @self.trip_panel.text[1] %></h6>
+      <h6 class="welcome"><%= @self.trip_panel.text[5] %></h6>
+    </div>
+  </div>
+</li>
