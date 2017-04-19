@@ -1,4 +1,4 @@
 ## Сайт для анонса концертов творческого коллектива Веселые Ребята
 ---
 
-[https://joyfulhearts.herokuapp.com](Перейти на сайт)
+[https://joyfulhearts.herokuapp.com] (Перейти на сайт)
