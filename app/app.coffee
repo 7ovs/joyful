@@ -4,12 +4,17 @@ fs = require "fs"
 moment = require "moment"
 _ = require "lodash"
 
+String.prototype.capitalizeFirstLetter = () ->
+  @charAt(0).toUpperCase() + this.slice(1)
+
+
 data = JSON.parse(fs.readFileSync("data.json", 'utf-8'))
 moment.locale('ru')
 
 data.ru.trip_panel.trip = data.ru.trip_panel.trip.map (country) ->
   country.concerts = country.concerts.map (conc) ->
     conc.dateFormat1 = moment(conc.date).format(data.ru.date_format)
+    conc.dateFormat1 = conc.dateFormat1.capitalizeFirstLetter()
     return conc
   return country
 
@@ -20,8 +25,31 @@ data.fr = _.extend({}, data.ru, data.fr)
 data.fr.trip_panel.trip = data.fr.trip_panel.trip.map (country) ->
   country.concerts = country.concerts.map (conc) ->
     conc.dateFormat1 = moment(conc.date).format(data.fr.date_format)
+    conc.dateFormat1 = conc.dateFormat1.capitalizeFirstLetter()
     return conc
   return country
+
+moment.locale('pl')
+
+data.pl = _.extend({}, data.ru, data.pl)
+
+data.pl.trip_panel.trip = data.pl.trip_panel.trip.map (country) ->
+  country.concerts = country.concerts.map (conc) ->
+    conc.dateFormat1 = moment(conc.date).format(data.pl.date_format)
+    conc.dateFormat1 = conc.dateFormat1.capitalizeFirstLetter()
+    return conc
+  return country 
+
+moment.locale('de')
+
+data.de = _.extend({}, data.ru, data.de)
+
+data.de.trip_panel.trip = data.de.trip_panel.trip.map (country) ->
+  country.concerts = country.concerts.map (conc) ->
+    conc.dateFormat1 = moment(conc.date).format(data.de.date_format)
+    conc.dateFormat1 = conc.dateFormat1.capitalizeFirstLetter()
+    return conc
+  return country 
 
 # console.log JSON.stringify(data, null, "  ")
 
@@ -40,8 +68,17 @@ app
 app.get '/', (req, res) ->
   res.render 'index', data.ru
 
+app.get '/ru', (req, res) ->
+  res.render 'index', data.ru
+
 app.get '/fr', (req, res) ->
   res.render 'index', data.fr
+
+app.get '/pl', (req, res) ->
+  res.render 'index', data.pl
+
+app.get '/de', (req, res) ->
+  res.render 'index', data.de
 
 app.use(express.static("pub"))
 

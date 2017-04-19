@@ -50,6 +50,7 @@ module.exports = (grunt) ->
           includePaths: [
             "#{APP_DIR}/styles"
             "#{BOWER}/uikit/scss"
+            "#{BOWER}/flag-icon-css/sass/"
           ]
         files:
           "#{DEV_DIR}/pub/app.css": "#{APP_DIR}/styles/app.sass"
@@ -65,6 +66,7 @@ module.exports = (grunt) ->
           "#{BOWER}/moment/min/moment-with-locales.min.js"
           "#{BOWER}/countdownjs/countdown.min.js"
           "#{BOWER}/uikit/js/uikit.min.js"
+          "#{BOWER}/uikit/js/core/dropdown.min.js"
           "#{BOWER}/uikit/js/components/slideshow.min.js"
           "#{BOWER}/uikit/js/components/slideshow-fx.min.js"
           "#{BOWER}/uikit/js/components/slideset-fx.min.js"
@@ -86,6 +88,11 @@ module.exports = (grunt) ->
             cwd: "#{BOWER}/uikit/fonts/"
             src: "**"
             dest: "#{DEV_DIR}/pub/fonts"
+          ,
+            expand: yes
+            cwd: "#{BOWER}/flag-icon-css/flags"
+            src: "**"
+            dest: "#{DEV_DIR}/pub/flags"
           ,
             expand: yes
             src: ["package.json", "Procfile"]

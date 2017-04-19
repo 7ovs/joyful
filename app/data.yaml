@@ -8,7 +8,7 @@ ru:
   email: stelisabethprojects@gmail.com
   text: [ "ПОПАСТЬ НА КОНЦЕРТ" ]
   active_tab: 0
-  date_format: "DD MMMM, dddd, в HH:mm"
+  date_format: "DD MMMM, dddd, в H:mm"
 
   h2h_link: https://www.facebook.com/H2Hfestivalpage
 
@@ -148,7 +148,7 @@ fr:
     - "VISITER NOTRE CONCERT"
 
   active_tab: 2
-  date_format: "DD MMMM, dddd, HH:mm"
+  date_format: "[Le] dddd, DD MMMM [à] H[h]mm"
 
   h2h_link: https://www.facebook.com/H2Hfestivalpage
 
@@ -172,7 +172,7 @@ fr:
       - "nos concerts auront lieu..."
       - "Avant le concert il reste"
       - "Jours|Heures|Minutes|Seconds"
-      - "Приглашаем Всех!"
+      - "Venez nombreux!"
 
     trip:
       - id: poland
@@ -242,7 +242,7 @@ fr:
       
       - paragraphs: 
           - |
-            J’ai essayé de chanter quand j’étais encore enfant. Ça fait plus d’une année que je suis dans la choeur. J’aime apparaître sur la scène, on nous accueille bien, on nous applaudit. On voudrait aimerait beaucoup venir en France ! Voir la Tour Eiffel à Paris, y monter et observer la ville d’en haut! Il serait si intéressant de parler un peu avec les habitants.Tout voyage nous apporte des souvenirs, l’occasion de faire de nouvelles connaissances, et découvrir des curiosités! Hélène Zakharevskaya,
+            J’ai essayé de chanter quand j’étais encore enfant. Ça fait plus d’une année que je suis dans la choeur. J’aime apparaître sur la scène, on nous accueille bien, on nous applaudit. On voudrait aimerait beaucoup venir en France ! Voir la Tour Eiffel à Paris, y monter et observer la ville d’en haut! Il serait si intéressant de parler un peu avec les habitants.Tout voyage nous apporte des souvenirs, l’occasion de faire de nouvelles connaissances, et découvrir des curiosités!
         author: "Hélène Zakharevskaya, soliste" 
 
   help_modal:
@@ -272,3 +272,282 @@ fr:
         - "En diffusant ces informations parmi vos amis, vos proches et vos collègues pour qu’ils viennent à ces concerts."
         - |
           En téléchargeant <a href="https://www.dropbox.com/sh/8r4uw3vwz75yi4l/AADVNqip8TC-T9UamwsnVdV0a" target="blank">ici</a> notre affiche pour nous aider à la diffuser.
+
+pl:
+  lang: pl
+  title: Wiesiołyje Riebiata
+
+  phone: +375 44 788-12-64 siostra Anastazja
+  footer: W ramach festiwalu “Od serca do serca”
+  email: stelisabethprojects@gmail.com
+  text: [ "Pójść na koncert" ]
+  date_format: "dddd, DD MMMM, [godzina] H:mm"
+
+
+  active_tab: 0
+
+  h2h_link: https://www.facebook.com/H2Hfestivalpage
+
+  main_panel:
+    pre_title: ZESPÓŁ ARTYSTYCZNY
+    title: WIESIOŁYJE RIEBIATA
+    text:
+      - "– Jego uczestnicy zamieszkują jeden z internatów dla osób z ograniczonymi możliwościami, wiele z nich, wbrew niesprawności fizycznej i psychicznej, obdarzeni nieograniczonymi talentami..."
+      - "Dowiedzieć się więcej ➛"
+      - "— Teraz u nich jest wyjątkowa możliwość wystąpić w różnych krajach świata..."
+      - "— Pomóżmy zrealizować marzenia naszych bohaterów!"
+    button_title: POMOC!
+
+
+  trip_panel:
+    text:
+      - "Nasze koncerty odbędą się"
+      - "Wstęp wolny"
+      - "Przyłączyć się"
+      - "Do koncerta pozostało"
+      - "Dni|Godzin|Minut|Sekund"
+      - "Zapraszamy wszystkich!"
+    trip:
+      - id: poland
+        name: Polska
+        concerts:
+          - id: warsaw1
+            name: Warszawa
+            subname: Centrum duchowe-edukacyjne
+            date: 2017-05-14 12:00
+            place: ul. św.Cyryła i Metodego 4, 03-403 Warszawa
+            large: true
+
+          - id: warsaw2
+            name: Warszawa
+            subname: Kościół św. Jacka
+            date: 2017-05-14 16:00
+            place: ul. Freta 1000-227 Warszawa
+            large: true
+
+      - id: germany
+        name: Niemcy
+        concerts:
+          - id: berlin
+            name:  Berlin
+            date: 2017-05-16 18:00
+            place: Rosyjski Dom Nauki i Kultury, Friedrichstraße, 176-179, 10117, Berlin
+            large: true
+
+      - id: france
+        name: Francja
+        concerts:
+
+          - id: troyes
+            name: Trua
+            date: 2017-05-18 19:30
+            place: Église Saint-Jean-au-Marché, 78 Rue Urbain IV, 10000 Trua
+
+          - id: nancy
+            name: Nansi
+            date: 2017-05-19 20:30
+            place: Eglise Saint Pierre, Place Saint-Pierre, à 54110 Rosières-aux-Salines
+
+          - id: graye
+            name: Gre
+            date: 2017-05-20 20:00
+            place: Salle des Congrès, 1 B Rue Moïse Lévy, 70100 Gre
+
+          - id: paris
+            name: Paryż
+            date: 2017-05-21 14:00
+            place: Amfiteatr Rosyjskiego Centrum Kultury Duchow ej przy Katedrze św.Trójcy. 1, quau Branly - 75007 Paryż
+            large: true
+
+  about_modal:
+    video: |
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/DniM7Po1Khc" frameborder="0" allowfullscreen></iframe>
+    header: "Rozumieć sercem, spiewać duszą..."
+    article:
+      - 
+        - Wiele lat przy Klasztorze działa twórczy kolektyw „Wiesiołyje Riebiata”, które prowadzi siostra zakonna Sofija(Diemjanowa).Jego członkie mieszkają w jednym z internatów dla dzieci z  niepełnosprawnościami, wiele z których mają nieograniczone talenty. Bez względu na swoje psychicznie i fizycznie choroby oni nie zasępią się,a szukają pocieszenia w twórczości.
+        - Ich socjusz – to terytorium pycho-neurologicznego internatu Nr. 3. Ktoś trafił tutaj zrządzeniem losu, ktoś inny spędził tutaj całe swoje życie. Dla nich nie dostępna jest większa cześć najzwyklejszych radości życia. To co dla nas jest powszechne, dla nich – nieznane. Kiedy my patrzymy na nich poprzez okno „wielkiego świata”, zdaje się nam iż oni pozbawieni są wszystkiego. To też nie jest tak. Jest oczywistym to, że oni mogą funkcjonować z zwykłym dla nas tempie. Ale nie oznacza to, iż oni ubodzy duchem. Siostry i Bracia, którzy nawiedzają internat, widzą ich szczerość i czułość. Tacy jak ci nigdy nie zdradzą, nie okłamią – oni zwyczajnie tego nie potrafią.
+      -
+        - „Wiesiołyje Riebiata” występują nie tylko w domu. 
+        - W ramach charytatywnych projektów oni już niejednokrotnie wystąpili w Rosji i niektórych miastach Europy. W planach na najbliższą przyszłość – wyjazd do Francji. To wszystko będzie możliwym tylko dzięki ofiarności tych, kto nie jest obojętnym wobec ich losu. My tak że mamy nadzieje, iż z Bożą pomocą artystyczna skarbonka zespołu wypełni się jeszcze jednym udanym występem.
+    quotes: 
+      - paragraphs: 
+          - "— Nikt z nich nie posiada wykształcenia muzycznego,ale wszyscy umieją śpiewać duszą, – opowiada Matuszka Zofia."
+          - "— Oni nie tylko śpiewają, ale też grają na łyżeczkach, tańczą. A jak pięknie często przemawiają!"
+        author: "Mniszka Zofia (Dziemianowa)"
+      
+      - paragraphs: 
+          - |
+            — Ja próbowałam śpiewać, gdy byłam jeszcze dzieckiem. A w chórze jestem już ponad rok. Bardzo lubię występować – i nas dobrze odbierają i biją brawo. 
+          - |
+            Bardzo chcielibyśmy pojechać do Francji! Zobaczyć Wierzę Eiffela w Paryżu, wspiąć się na nią i zobaczyć miasto z wysokości! Bardzo ciekawym jest dla nas porozmawiać z ludźmi, którzy tam mieszkają. Każdy wyjazd dla nas to pamięć, nowe przyjaźni, interesujące momenty!
+        author: "Solistka – Helena Zacharievskaja." 
+
+  help_modal:
+    header:
+      - Drodzy przyjaciele! Dziękujemy za zainteresowanie naszym projektem! 
+      -
+        - Mamy nadzieję, że razem możemy zrobić niemożliwe możliwym, i rozdzielić z zespołem „WIESIOŁYJE RIEBIATA” radość spełnienia ich marzeń! 
+        - Wasze wsparcie i pomóc w promocji naszej strony internetowej jest dla nas bardzo ważna!
+    bank:
+      - "Wesprzeć nas można w następujący sposób:"
+      -
+        - "Okazując wsparcie finansowe, ofiarując dobrowolną kwotę."
+        - "Nasze dane bankowe:"
+      - |
+        Bank name: BRE Bank S.A.INTERNETBANKING
+        Bank address: al.Pilsudskiego 3, 90-368 Lodz
+        IBAN: PL27114020040000371201841659
+        Receiver: Magdalena Tichoniuk
+        Address: ul. Stefana Zeromskiego 11, 17-200
+        Hajnowka, Polska
+        BIC/SWIFT: BREXPLPWMBK
+        Purpose: for the trip «Joyful Hearts» to France
+    other: 
+      - "Również można nas wesprzeć nie tylko materialnie:"
+      -
+        - |
+          Prosze powiedz o nas przyjacielom w sieciach społecznych <a href="https://www.facebook.com/pg/monsteelisabeth/posts/" target="blank">Facebook</a>
+        - "Opowiedzcie o nas swoim znajomym, rodzinie, kolegom aby również i oni mogli przyjść na nasz koncert."
+        - |
+          <a href="https://www.dropbox.com/sh/8r4uw3vwz75yi4l/AADVNqip8TC-T9UamwsnVdV0a" target="blank">W tym miejscu</a> można pobrać nasz plakat-zaproszenie i pomóc nam w jego rozprowadzaniu.
+
+
+de:
+  lang: de
+  title: Die singenden herzen
+
+  phone: +375 44 788-12-64 Sr.Anastasija
+  footer: Im Rahmen des Festivals „Von Herz zu Herz“
+  email: stelisabethprojects@gmail.com
+  text: [ "ZUM KONZERT KOMMEN" ]
+  date_format: "dddd, DD MMMM, H:mm"
+
+
+  active_tab: 1
+
+  h2h_link: https://www.facebook.com/H2Hfestivalpage
+
+  main_panel:
+    pre_title: DAS GESANG-UND TANZENSEMBLE
+    title: DIE SINGENDEN HERZEN
+    text:
+      - "— Seine Teilnehmer wohnen in einem der Internate für Menschen mit eingeschränkter Alltagskompetenz. Viele von ihnen weisen trotz ihrer körperlichen und seelischen Erkrankungen uneingeschränkte Talente auf..."
+      - "Mehr erfahren ➛"
+      - "— Nun haben sie die einzigartige Gelegenheit in verschiedenen Ländern der Welt aufzutreten..."
+      - "— Helfen wir gemeinsam, den Traum „Der Singenden Herzen“ in Erfüllung zu bringen!!"
+    button_title: HELFEN!
+
+
+  trip_panel:
+    text:
+      - "Unsere Konzerte finden"
+      - "Eintritt frei."
+      - "Beitreten"
+      - "Verbleibende Zeit bis zum Konzert"
+      - "Tage|Stunden|Minuten|Sekunden"
+      - "Wir laden alle ein!"
+    trip:
+      - id: poland
+        name: Polen
+        concerts:
+          - id: warsaw1
+            name: Warschau
+            subname: Geistliches Aufklärungszentrum
+            date: 2017-05-14 12:00
+            place: ul. Swiatych Kirilla i Mefodija  4, 03-403 Warschau
+            large: true
+
+          - id: warsaw2
+            name: Warschau
+            subname: Kirche des Hl. Hyazinth
+            date: 2017-05-14 16:00
+            place: ul. Freta 1000-227 Warschau
+            large: true
+
+      - id: germany
+        name: Deutschland
+        concerts:
+          - id: berlin
+            name: Berlin
+            date: 2017-05-16 18:00
+            place: Russischen Haus der Wissenschaft und Kultur, Friedrichstraße, 176-179, 10117, Berlin
+            large: true
+
+      - id: france
+        name: Frankreich
+        concerts:
+
+          - id: troyes
+            name: Troyes
+            date: 2017-05-18 19:30
+            place: Église Saint-Jean-au-Marché, 78 Rue Urbain IV, 10000 Troyes
+
+          - id: nancy
+            name: Nancy
+            date: 2017-05-19 20:30
+            place: Eglise Saint Pierre, Place Saint-Pierre, à 54110 Rosières-aux-Salines
+
+          - id: graye
+            name: Gray
+            date: 2017-05-20 20:00
+            place: Salle des Congrès, 1 B Rue Moïse Lévy, 70100 Gray
+
+          - id: paris
+            name: Paris
+            date: 2017-05-21 14:00
+            place: Amphitheater des Russischen geistlichen Kulturzentrums bei der Dreifaltigkeitskathedrale. 1, quau Branly - 75007 Paris
+            large: true
+
+  about_modal:
+    video: |
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/DniM7Po1Khc" frameborder="0" allowfullscreen></iframe>
+    header:   "Mit Herz verstehen, mit der Seele singen..."
+    article:
+      - 
+        - Viele Jahre besteht am Kloster unter der Leitung der Sr. Sofija das Gesang-und Tanzensemble „Die Singenden Herzen“.  Seine Teilnehmer wohnen in einem der Internate für Menschen mit eingeschränkter Alltagskompetenz, viele von ihnen weisen jedoch uneingeschränkte Talente auf. Trotz ihrer psychischen und physischen Erkrankungen verzagen sie nicht sondern suchen nach Auswegen in Kunsttherapie.
+        - Ihr Lebensraum beschränkt sich auf das Gelände des psychoneurologischen Internates Nr. 3. Einige landen hier durch Schicksalsschläge, andere verbringen hier ihr ganzes Leben. Sie können an den meisten Lebensfreuden nicht teilhaben. Sie kennen vieles nicht, was uns selbstverständlich erscheint. Wenn man auf diese Menschen aus der „großen Welt“ hinausschaut,  glaubt man, dass sie vieler Sachen entbehrt sind. Das stimmt aber nicht. Wahr ist, dass sie mit dem für uns gewöhnlichen Lebensrhythmus nicht Schritt halten können. Das bedeutet jedoch nicht, dass ihre Seele arm ist. Die Schwestern, die das Internat betreuen, sprechen von ihrer Aufrichtigkeit und Feinfühligkeit. Diese Menschen werden nie verraten und betrügen – sie können das einfach nicht. 
+      -
+        - «Die Singenden Herzen» treten nicht nur zu Hause auf.
+        - Im Zuge diverser Projekte gaben sie bereits einige Konzerte in Russland und Litauen. In der nächsten Zukunft planen sie eine Reise nach Frankreich. Sie ist möglich geworden dank der Spenden der Menschen, die das weitere Schicksal des oben erwähnten Personenkreises nicht kalt lässt. Wir hoffen, dass mit Gottes Hilfe unsere Künstler sich einen weiteren Ort ihrem Konzertkonto werden gutschreiben können.
+    quotes: 
+      - paragraphs: 
+          - "— Keiner von Ihnen hat eine musikalische Ausbildung, aber alle singen mit der Seele, - erzählt Sr. Sofija"
+          - "— Sie tun nicht nur singen, sondern spielen Löffel und tanzen. Und wie schön drücken sie sich manchmal aus!"
+        author: "Sr. Sofija"
+      
+      - paragraphs: 
+          - |
+            — Ich habe angefangen zu singen, als ich noch klein war. Im Chor bin ich schon über ein Jahr. Ich mag es, vor dem Publikum aufzutreten, wir werden gut empfangen, bekommen Applaus.
+          - |
+            Ich würde sehr gerne nach Frankreich fahren! Den Eifelturm in Paris besichtigen, auf ihn hinaufsteigen und die Stadt von der Höhe sehen! Es ist sehr spannend, mit Menschen, die dort wohnen, ins Gespräch zu kommen. Jede Reise bedeutet neue Bekanntschaften, interessante Momente, ein schönes Andenken!
+        author: "Solistin Jelena Sacharewskaja" 
+
+  help_modal:
+    header:
+      - Liebe Freunde! Wir danken Ihnen herzlichst für Ihre Unterstützung!
+      -
+        - Wir hoffen, dass wir zusammen „den Singenden Herzen“ helfen, ihren Traum in Erfüllung zu bringen.
+        - Ihre Unterstützung sowie Hilfe bei der Weiterverbreitung unserer Website sind uns äußerst wichtig!
+    bank:
+      - "Sie können zu diesem Projekt wie folgt beitragen:"
+      -
+        - "Finanziell."
+        - "Bankverbindung:"
+      - |
+        Bank name: BRE Bank S.A.INTERNETBANKING
+        Bank address: al.Pilsudskiego 3, 90-368 Lodz
+        IBAN: PL27114020040000371201841659
+        Receiver: Magdalena Tichoniuk
+        Address: ul. Stefana Zeromskiego 11, 17-200
+        Hajnowka, Polska
+        BIC/SWIFT: BREXPLPWMBK
+        Purpose: for the trip «Joyful Hearts» to France
+    other: 
+      - "kommunikativ"
+      -
+        - |
+          Erzählen Sie von uns Ihren Freunden in sozialen Netzwerken <a href="https://www.facebook.com/pg/monsteelisabeth/posts/" target="blank">Facebook</a>
+        - "Erzählen Sie von uns Ihren Freunden, Verwandten, Kollegen und nehmen Sie sie mit zum Konzert."
+        - |
+          <a href="https://www.dropbox.com/sh/8r4uw3vwz75yi4l/AADVNqip8TC-T9UamwsnVdV0a" target="blank">Hier</a> können Sie unser Plakat herunterladen und bei seiner Verbreitung helfen.     

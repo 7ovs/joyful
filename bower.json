@@ -18,6 +18,8 @@
     "angular": "^1.6.4",
     "moment": "^2.18.1",
     "countdownjs": "^2.6.0",
-    "lodash": "^4.17.4"
-  }
+    "lodash": "^4.17.4",
+    "flag-icon-css": "^2.8.0"
+  },
+  "devDependencies": {}
 }

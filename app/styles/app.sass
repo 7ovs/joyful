@@ -5,11 +5,14 @@ $tab-border-width:                               1px
 $tab-padding-horizontal:                         40px
 $tab-padding-vertical:                           16px
 
-$modal-dialog-large-width-large: 930px
+$modal-dialog-large-width-large:                 930px
+
+$flag-icon-css-path: "/flags"
 
 @import "uikit-mixins"
 @import "uikit"
 @import "components/slideshow"
+@import "_flag-icon"
 
 html
   margin: 0
@@ -25,18 +28,23 @@ html
 
 .root-container
   min-width: 1130px
-  position: relative
-  .phone
-    position absolute
-    top: -40px
-    right: 0
-    height: 40px
-    width: auto
+  //position: relative
+  .top-panel
+    // position absolute
+    // top: -40px
+    // right: 0
+    height: 44px
     background: #50555C
     color: #ddd
-    font: bold 24px/40px "Open Sans Condensed"
-    text-align: right
+    font: bold 24px/44px "Open Sans Condensed"
     padding: 0 10px
+    .phone
+      float: right
+    .langmenu
+      position: relative
+      float: left
+      .uk-dropdown
+        width: 70px
     //border-top: 1px solid white
     //box-shadow: 0 1px 3px rgba(black, .4)
 
@@ -275,6 +283,30 @@ $tab-content-height: 540px
     content: "seconds"
   .bracket-1:after
     content: "Avant le concert il reste"
+
+.countdown-view.pl
+  .days:after
+    content: "Dni"
+  .hours:after
+    content: "Godzin"
+  .minutes:after
+    content: "Minut"
+  .seconds:after
+    content: "Sekund"
+  .bracket-1:after
+    content: "Do koncerta pozostało"
+
+.countdown-view.de
+  .days:after
+    content: "Tage"
+  .hours:after
+    content: "Stunden"
+  .minutes:after
+    content: "Minuten"
+  .seconds:after
+    content: "Sekunden"
+  .bracket-1:after
+    content: "Verbleibende Zeit bis zum Konzert"
 
 
 .concert-date
