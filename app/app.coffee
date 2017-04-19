@@ -3,6 +3,8 @@ ect = require "ect"
 fs = require "fs"
 moment = require "moment"
 _ = require "lodash"
+request = require "request"
+
 
 String.prototype.capitalizeFirstLetter = () ->
   @charAt(0).toUpperCase() + this.slice(1)
@@ -63,10 +65,17 @@ app
       ext : '.ect'
       cache: no
     ).render)
-
-
+  
 app.get '/', (req, res) ->
-  res.render 'index', data.ru
+  # ip = req.headers['x-forwarded-for'] or req.connection.remoteAddress
+  # request "http://ipinfo.io/#{ip}/country", (error, response, body) ->
+  #   if not error and body
+  #     lang = body.trim().toLowerCase()
+  #     if lang in ["fr", "de", "ru", "pl"]
+  #       res.redirect "/#{lang}"
+  #     return
+  #   
+  res.redirect "/ru"
 
 app.get '/ru', (req, res) ->
   res.render 'index', data.ru
