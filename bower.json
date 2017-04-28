@@ -20,7 +20,7 @@
     "countdownjs": "^2.6.0",
     "lodash": "^4.17.4",
     "flag-icon-css": "^2.8.0",
-    "uikit": "^2.27.2"
+    "uikit": "https://github.com/uikit/bower-uikit.git#^2.27.2"
   },
   "devDependencies": {}
 }
