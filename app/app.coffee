@@ -32,28 +32,7 @@ data.fr.trip_panel.trip = data.fr.trip_panel.trip.map (country) ->
   return country
 
 moment.locale('pl')
-
 data.pl = _.extend({}, data.ru, data.pl)
-
-data.pl.trip_panel.trip = data.pl.trip_panel.trip.map (country) ->
-  country.concerts = country.concerts.map (conc) ->
-    conc.dateFormat1 = moment(conc.date).format(data.pl.date_format)
-    conc.dateFormat1 = conc.dateFormat1.capitalizeFirstLetter()
-    return conc
-  return country 
-
-moment.locale('de')
-
-data.de = _.extend({}, data.ru, data.de)
-
-data.de.trip_panel.trip = data.de.trip_panel.trip.map (country) ->
-  country.concerts = country.concerts.map (conc) ->
-    conc.dateFormat1 = moment(conc.date).format(data.de.date_format)
-    conc.dateFormat1 = conc.dateFormat1.capitalizeFirstLetter()
-    return conc
-  return country 
-
-# console.log JSON.stringify(data, null, "  ")
 
 app = express()
 
@@ -67,14 +46,6 @@ app
     ).render)
   
 app.get '/', (req, res) ->
-  # ip = req.headers['x-forwarded-for'] or req.connection.remoteAddress
-  # request "http://ipinfo.io/#{ip}/country", (error, response, body) ->
-  #   if not error and body
-  #     lang = body.trim().toLowerCase()
-  #     if lang in ["fr", "de", "ru", "pl"]
-  #       res.redirect "/#{lang}"
-  #     return
-  #   
   res.redirect "/ru"
 
 app.get '/ru', (req, res) ->
@@ -82,12 +53,6 @@ app.get '/ru', (req, res) ->
 
 app.get '/fr', (req, res) ->
   res.render 'index', data.fr
-
-app.get '/pl', (req, res) ->
-  res.render 'index', data.pl
-
-app.get '/de', (req, res) ->
-  res.render 'index', data.de
 
 app.use(express.static("pub"))
 

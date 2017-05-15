@@ -1,177 +1,80 @@
 <% extend 'layout' %>
-
 <% block "header" : %>
 <%= @title %>
 <% end %>
 
-<div id="learn-more" class="uk-modal">
-    <div class="uk-modal-dialog uk-modal-dialog-large learn-more">
-        <a class="uk-modal-close uk-close"></a>
-        <h1><%= @about_modal.header %></h1>
-        <div class="uk-grid">
-          <div class="uk-width-1-2">
-            <figure>
-              <img src="/img/img-1.jpg" alt="">
-            </figure>
-            <% for p in @about_modal.article[1] : %>
-              <p><%= p %></p>
-            <% end %>
-            <figure class="uk-grid figure-elena">
-              <figcaption>
-                <% for p in @about_modal.quotes[1].paragraphs : %>
-                  <p><%= p %></p>
-                <% end %>
-                <p class="author"><%= @about_modal.quotes[1].author %></p>
-              </figcaption>
-              <div class="uk-width-4-5">
-                <img  src="/img/img-3.jpg" alt="">
-              </div>
-            </figure>
+ <div id="mobil" class="cl-mobil"> 
+     <div id="bar" class="cl-bar">
+        <nav class="uk-navbar">
+          <a href="#" class="uk-navbar-toggle"></a>
+          <div class="uk-navbar-flip">
+            <a href="" class="uk-navbar-toggle uk-navbar-toggle-alt"></a>
           </div>
-          <div class="uk-width-1-2">
-            <% for p in @about_modal.article[0] : %>
-              <p><%= p %></p>
-            <% end %>
-            <figure class="uk-grid figure-monsofia">
-              <figcaption>
-                <% for p in @about_modal.quotes[0].paragraphs : %>
-                  <p><%= p %></p>
-                <% end %>
-                <p class="author"><%= @about_modal.quotes[0].author %></p>
-              </figcaption>
-              <div class="uk-width-1-5"></div>
-              <div class="uk-width-4-5">
-                <img src="/img/img-2.jpg" alt="">  
-              </div>
-            </figure>
-          </div>
-        </div>
-        <div class="uk-flex uk-flex-center video">
-          <%- @about_modal.video %>  
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-<div id="help" class="uk-modal help-modal">
-    <div class="uk-modal-dialog">
-        <a class="uk-modal-close uk-close"></a>
-        <header>
-          <h2><%- @help_modal.header[0] %></h2>
-          <% for p in @help_modal.header[1] : %>
-            <p><%= p %></p>
-          <% end %>
-        </header>
-        
-        <h3><%= @help_modal.bank[0] %></h3>
-        <% for p in @help_modal.bank[1] : %>
-          <p><%= p %></p>
-        <% end %>
-        <pre><%= @help_modal.bank[2] %></pre>
-
-        <h3><%= @help_modal.other[0] %></h3>
-        <ul>
-          <% for p in @help_modal.other[1] : %>
-            <li><%- p %></li>
-          <% end %>
-        </ul>
-    </div>
-</div>
-
-<div class="uk-container uk-container-center uk-margin uk-margin-large-bottom uk-margin-large-top root-container">
-
-    <div class="top-panel">
-      
-      <!-- <label style="float: left">Language:&nbsp;</label>  -->
-      <div class="langmenu" data-uk-dropdown="{mode:'click'}">
-
-          <button class="uk-button"><span class="flag-icon flag-icon-<%= @lang %> flag-icon-squared"> </span>&nbsp;<%= @lang.toUpperCase() %>&nbsp;<i class="uk-icon-caret-down"></i></button>
-
-          <div class="uk-dropdown">
-              <ul class="uk-nav uk-nav-dropdown">
-                  <li><a href="/pl"><span class="flag-icon flag-icon-pl flag-icon-squared"></span>&nbsp;PL</a></li>
-                  <li><a href="/de"><span class="flag-icon flag-icon-de flag-icon-squared"></span>&nbsp;DE</a></li>
-                  <li><a href="/fr"><span class="flag-icon flag-icon-fr flag-icon-squared"></span>&nbsp;FR</a></li>
-                  <li><a href="/ru"><span class="flag-icon flag-icon-ru flag-icon-squared"></span>&nbsp;RU</a></li>
-              </ul>
-          </div>
-
-      </div>
-
-      <div class="phone">
-        <%= @phone %>
-      </div>
-      
+        </nav>
     </div>
 
-    <div class="uk-relative uk-overlay uk-overlay-active uk-slidenav-position" style="width: 100%; height:480px;" data-uk-slideshow={autoplay:true}>
-        <ul class="uk-slideshow">
-            <li><img src="img/1.jpg"></li>
-            <li><img src="img/2.jpg"></li>
-            <li><img src="img/3.jpg"></li>
-            <li><img src="img/4.jpg"></li>
-            <li><img src="img/5.jpg"></li>
-        </ul>
-        
-        <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade main-block">
-        
-          <div class="main-block-title">
-            <h5><%= @main_panel.pre_title %></h5>
-            <h1><%= @main_panel.title %></h1>
-          </div>
+    <div id="pict" class="cl-pict">
+        <img src="/img/ovs_vhod.png" alt="тут должна была появиться картиночка" data-uk-svg>
+    </div>
 
-          <div class="learn-more-text">
-            <p><%= @main_panel.text[0] %></p>
-            <p>
-              <a class="learn-more-link" href="#learn-more" data-uk-modal><%= @main_panel.text[1] %></a>
-            </p>
+<!--<div class="tabs">
+    <input id="tab1" type="radio" name="tabs" checked>
+    <label for="tab1" title="Вкладка 1">Объявления</label>
+ 
+    <input id="tab2" type="radio" name="tabs">
+    <label for="tab2" title="Вкладка 2">Новости</label>
+     
+    <section id="content-tab1">
+        <p>
             
-          </div>
+      </p>
+    </section>  
+    <section id="content-tab2">
+        <p>
+          Тут будут новости!
+        </p>
+    </section> 
+ </div>-->
 
-          <div class="unique-chance">
-            <%= @main_panel.text[2] %> 
-          </div>
+      <div id="tabs" class="cl-tabs">
+        <ul class="uk-tab" data-uk-tab>
+            <li class="uk-active"><a href="">Объявления</a></li>
+            <li><a href="">Новости</a></li>
+        </ul>
 
-          <div class="lets-help">
-            <%= @main_panel.text[3] %>
-          </div>
-
-          <button class="uk-button help-button" data-uk-modal="{target:'#help'}"><%= @main_panel.button_title %></button>
-        </div>
-    </div>
-
-  
-    <div class="get-to-concert">
-      <h2 class="uk-clearfix"><%= @text[0] %></h2>
-      <span class="uk-icon-large uk-icon-angle-double-down"></span>
-    </div>
-
-    <div>
-      <div class="tab-wrap">
-        <ul id="country-tab" class="uk-tab uk-tab-grid uk-tab-top" data-uk-switcher="{connect:'#countries', active: <%- @active_tab %>}" data-uk-tab >
-          <% for country in @trip_panel.trip : %>
-            <li data-target="<%- country.id %>-nav" class="uk-width-1-3"><a href="#"><%= country.name %></a></li>
-          <% end %>
-        </ul>  
+        <!--<div class="korpus">
+          <input type="radio" name="odin" checked="checked" id="vkl1"/>
+            <label for="vkl1">Объявления</label>
+          <input type="radio" name="odin" id="vkl2"/>
+            <label for="vkl2">Новости</label>
+        </div>-->
+        <div id="cont" class="cl-content"> <!-- объявления -->
+                <p id="cont1" class="cl-conte">
+                  <p id="date-1" class="cl-date">05 мая 2017 17:17</p>
+                  <p id="cont-1" class="cl-cont">У КОГО ЕСТЬ СУМКИ / ЧЕМОДАНЫ
+        у ансамбля интерната Веселые ребята, которые поедут с благотворительными концертами в Европу, НЕТ сумок, куда положить свои вещи у кого есть чемоданы / сумки / рюкзаки свободные на период 13-25 мая - прошу поделиться. Не хватает 10. Размер не важен -  автобус с огромным багажником м.б. в наших контейнерах есть (пусть немного неисправные) чемоданы, которые не будут задействованы в мае?                  Жду ЛИЧНЫХ сообщений-ответов.
+        Брат Николай (Стороженко) </p>
+                </p>
+                <p id="cont2" class="cl-conte">
+                  <p id="date-2" class="cl-date">08 мая 2017 11:52</p>
+                  <p id="cont-2" class="cl-cont">МОЛИТВА В 13:00
+        Сегодня помолимся святителю Николаю о всех наших путешествующих командах
+        в Державном храме
+        просьба взять с собой тексты акафиста
+        Брат Николай (Стороженко)</p>
+                </p>
+                <p id="cont3" class="cl-conte">
+                  <p id="date-3" class="cl-date">07 мая 2017 15:29</p>
+                  <p id="cont-3" class="cl-cont">МОЛИТВА В 13:00
+        Сегодня Братия и сестры! Христос Воскресе! Хотела обратиться к вам с просьбой: 31 мая Иоанно-Кормянский монастырь будет отмечать свое 100- летие и 20-летие со дня обретения мощей праведного Иоанна Кормянского. Матушки из монастыря обращаются с просьбой помочь с цветами для украшения. Если у кого то будет возможность пожертвовать свои цветы, с благодарностью приму до 28-29 мая. Спаси Господи! 
+        Сестра Анна (Бородина)</p>          
+        </p>
       </div>
-      
-      <ul class="tab-content uk-switcher" id="countries">
-        <% for country in @trip_panel.trip : %>
-          
-          <li id="<%- country.id %>-tab">
-            <%- include '_partials/_country-view', {country: country, self: @ } %>
-          </li>
+    </div> 
 
-        <% end %>
-      </ul>
-    </div>
-
-    <footer>
+    <!--<footer>
       <p class="project"><a href="<%- @h2h_link %>"><%= @footer %></a></p>
       <p class="email"><a href="mailto:<%- @email %>"><%= @email %></a></p>
-    </footer>
-    
+    </footer>-->
     
 </div>
